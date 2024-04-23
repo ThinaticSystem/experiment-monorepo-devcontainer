@@ -6,7 +6,14 @@
 	"dockerComposeFile": ["../../compose.yaml"],
 	"service": "devcontainer-frontend",
 	"shutdownAction": "none",
-	"workspaceFolder": "/workspace/frontend"
+	"workspaceFolder": "/workspace/frontend",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-azuretools.vscode-docker"
+			]
+		}
+	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
