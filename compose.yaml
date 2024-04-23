@@ -1,4 +1,12 @@
 services:
+  devcontainer-backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+      target: devcontainer
+    volumes:
+      - .:/workspace:cached
+    command: sleep infinity
   devcontainer-frontend:
     build:
       context: .
